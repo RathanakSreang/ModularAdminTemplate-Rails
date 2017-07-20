@@ -1,0 +1,276 @@
+.post-content-wrapper {
+  hr {margin-top: 0;}
+  .post-title {
+    font-size: 24px;
+    line-height: 1.3em;
+    margin-bottom: 7px;
+    word-wrap: break-word;
+    font-weight: bold;}
+  .post-meta {
+    display: block;
+    .post-links {
+      a {
+        padding-left: 5px;
+      }
+    }}
+
+  .post-buttons {
+    .btn {
+      font-size: 1.5em;}
+    .voting-buttons {
+      background-color: #f7f7f9;
+      border: 1px solid rgba(0, 0, 0, 0.15);
+      border-radius: 0.25rem;
+      display: inline-block;
+      .btn {
+        background-color: #FFF;
+      }
+      .btn-vote-up {
+        border-right: 1px solid rgba(0, 0, 0, 0.15);
+        border-radius: 0;
+      }
+      .btn-vote-down {
+        border-left: 1px solid rgba(0, 0, 0, 0.15);
+        border-radius: 0;
+      }
+      .voting-score {
+        padding: 0 5px;}}
+
+    .next-post-button{
+      display: inline-block;}
+    .nav-pills .nav-link {
+      border-radius: 0;}}}
+
+.post-widget-container {
+  @extend .fixed-bottom, .rounded-0, .pt-2, .pb-2;
+  background-color: rgba(255,255,255,0.98);
+  .vote, .voted {
+    @extend .btn, .btn-no-outline, .text-muted, .pr-2, .pl-2;
+    .fa {
+      font-size: 1.5rem;
+    }}
+  .voted-up {
+    @extend .text-success;
+  }
+  .voted-down {
+    @extend .text-danger;
+  }
+  .vote-point {
+    color: #9b9b9b;
+    font-weight: 500;}
+  .btn-facebook, .btn-facebook:link, .btn-facebook:visited, .btn-google-plus:link, .btn-google-plus:visited,
+  .btn-twitter, .btn-twitter:link, .btn-twitter:visited, .btn-clip, .btn-clip:link, .btn-clip:visited,
+  ,.btn-next, .btn-next:link, .btn-next:visited {
+    border-radius: 50%;
+    color: #fff;
+    i {
+      margin: 0;
+    }
+  }
+  .btn-twitter {
+    padding: 10px 14px;
+  }
+  .btn-google-plus {
+    padding: 10px;
+  }
+  .btn-facebook {
+    padding: 10px 16px;
+  }
+  .btn-clip {
+    padding: 10px 14px;
+  }
+  .btn-next {
+    padding: 10px 13px;
+  }
+  }
+
+@media (max-width: 400px) {
+  .post-widget-container {
+    .vote, .voted {
+      padding-left: 5px;
+      padding-right: 5px;
+      .fa {
+      font-size: 1.1rem;
+      }
+    }
+    .btn-twitter, .btn-google-plus, .btn-facebook, .btn-clip, .btn-next {
+      margin-left: -3px;
+    }
+    .btn-twitter {
+      padding: 8px 12px;
+    }
+    .btn-google-plus {
+      padding: 8px;
+    }
+    .btn-facebook {
+      padding: 8px 14px;
+    }
+    .btn-clip {
+      padding: 8px 12px;
+    }
+    .btn-next {
+      padding: 8px 11px;
+    }
+  }
+}
+.post-creator {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 5px;
+  margin-bottom: 15px;
+  background-color: #FFF;
+}
+
+.post-page {
+  .main-section {
+    @include media-breakpoint-up(sm) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+.grid-post-sizer, .grid-post {
+  padding-left:2.5px;
+  padding-right:2.5px;
+  @include media-breakpoint-down(md) {
+    width: 100%;
+  }
+  @include media-breakpoint-up(lg) {
+    width: 50%;
+  }
+}
+.posts-block {
+  .posts-feed {
+    .post-card {
+      @extend .card;
+      margin-bottom: 5px;
+      border-radius: 0;
+      width: 100%;
+      display: inline-block;
+      .post-title {
+        @extend .mb-0, .pl-1, .pt-1, .pr-1;
+        a {
+          color: #333;
+        }
+        a:hover {
+          color: #167ac6;
+        }
+      }
+      .post-meta {
+        @include clearfix;
+        @extend .mb-1, .pl-1, .pr-1;
+        display: block;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+
+        .points {
+          .carets {
+            display: inline-block;
+            position: relative;
+            margin-right: .5rem;
+            .fa:first-child {
+              bottom: 10px;
+            }
+            .fa:last-child {
+              bottom: 2px;
+            }
+            .fa {
+              height: .5rem;
+              position: absolute;
+              font-size: 1rem;
+              color: #9b9b9b;
+            }
+          }
+        }
+      }
+      .post-buttons {
+        .btn-vote {
+          @extend .btn;
+          padding-left: 0px;
+          padding-right: 0px;
+        }
+        .btn-up-vote {
+          @extend .text-muted;
+        }
+        .btn-up-voted {
+          @extend .text-success;
+        }
+        .btn-down-vote {
+          @extend .text-muted;
+        }
+        .btn-down-voted {
+          @extend .text-danger;
+        }
+        .btn-more-option {
+          @extend .btn;
+          padding-left: 0px;
+        }
+        .btn-comments {
+          @extend .btn;
+          padding-left: 0px;
+          padding-right: 0px;
+        }
+        .btn-clip {
+          padding-left: 0px;
+          padding-right: 0px;
+          @extend .text-muted;
+          background-color: transparent;
+        }
+        .btn-cliped {
+          @extend .text-success;
+        }
+      }
+    }
+  }
+}
+
+.post-upload-form {
+  .dropzone {
+    text-align: center;
+  }
+  .genre-redio-group {
+    .form-check-label {
+      padding-left: 0;
+    }
+    .genre-redio-button {
+      position: absolute;
+      visibility: hidden;
+    }
+
+    .radio-label {
+      border: 1px solid rgba(0, 0, 0, 0.15);
+      border-radius: 0.25rem;
+      padding: 5px;
+      margin-bottom: 5px;
+      cursor: pointer;
+    }
+
+    .radio-label:hover {
+      border: 1px solid #449d44;
+    }
+
+    input[type=radio]:checked ~ div {
+      background-color: #449d44;
+    }
+
+    input[type=radio]:checked + div span{
+      color: #FFF;
+    }
+  }
+}
+
+.side-section {
+  .side-post {
+    margin-bottom: 5px;
+    a {
+      color: #333;
+    }
+    a:hover {
+      color: #167ac6;
+    }
+    .post-title {
+      @extend .mt-1, .text-center;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  }
+}

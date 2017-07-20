@@ -1,0 +1,14 @@
+#center_modal {
+  .modal-dialog {
+    top: 10%;
+  }
+  .close {
+    @extend .btn-no-outline;
+    position: fixed;
+    z-index: 100;
+    right: 0;
+    top: -8px;
+    font-size: 3rem;
+    cursor: pointer;
+  }
+}

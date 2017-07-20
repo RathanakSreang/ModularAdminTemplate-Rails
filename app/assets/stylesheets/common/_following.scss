@@ -1,0 +1,47 @@
+.btn-follow, .btn-unfollow {
+  @extend .btn;
+  margin-top: 2.5px;
+  // border-radius: 0;
+  min-width: 108px;
+}
+.btn-sm-follow, .btn-sm-unfollow {
+  min-width: 85px;
+}
+.btn-follow {
+  @extend .btn-primary;
+}
+
+.btn-sm-follow {
+  @extend .btn-sm, .btn-primary;
+}
+
+.btn-unfollow, .btn-sm-unfollow {
+  .to-unfollow {
+    display: none;
+  }
+  .is-following {
+    display: inline-block;
+  }
+}
+.btn-unfollow {
+  @extend .btn-success;
+}
+.btn-unfollow:hover {
+  @extend .btn-danger;
+}
+
+.btn-unfollow:hover, .btn-sm-unfollow:hover {
+  .to-unfollow {
+    display: inline-block;
+  }
+  .is-following {
+    display: none;
+  }
+}
+
+.btn-sm-unfollow {
+  @extend .btn, .btn-sm, .btn-success;
+}
+.btn-sm-unfollow:hover {
+  @extend .btn, .btn-sm, .btn-danger;
+}

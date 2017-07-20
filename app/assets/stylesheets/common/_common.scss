@@ -1,0 +1,86 @@
+.navbar-toggler {
+  cursor: pointer;
+}
+
+.text-xs-center {
+    text-align: center!important;}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+.field_with_errors, .input-group .form-control {
+  width: 100%;
+}
+
+.btn-no-outline:focus, .btn-no-outline:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.btn {
+  cursor: pointer;
+  outline: none !important;
+  box-shadow: none !important;
+}
+#error_explanation {
+  color: #f00;
+  border: 1px solid #f00;
+  padding: 10px;
+  margin-bottom: 5px;
+  h2 {
+    font-size: 1.2rem;
+  }
+  ul {
+    margin: 0;
+    padding-left: 15px;
+    li {
+      font-size: 1rem;
+    }
+  }
+}
+.field_with_errors {
+  @extend .has-danger;
+  .form-control {
+    border-left: 0;
+  }
+}
+
+.alert-notice {
+  @extend .alert-success;
+}
+.alert-alert {
+  @extend .alert-danger;
+}
+
+.main-section, .side-section {
+  padding-top: 0.8em;
+}
+.main-section {
+  .post-content-wrapper {
+    background-color: #FFF;
+  }
+  .post-comment-container {
+    background-color: #f6f7f9;
+  }
+}
+.side-section {
+  .card {
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0.75rem;
+  }
+}
+
+.nav-pills .nav-link {
+  border-radius: 0;
+}
+
+.modal-body {
+  .card {
+    border: 0;
+    border-radius: 0;}}
+
+.turbolinks-progress-bar {
+  height: 5px;
+  background-color: green;}

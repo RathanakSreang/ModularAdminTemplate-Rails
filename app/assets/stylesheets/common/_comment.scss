@@ -1,0 +1,30 @@
+.comment-media {
+  background-color: #FFF;
+  @extend .pt-2, .pl-2, .pb-2;
+  .created-at {
+    @extend .text-muted;
+    font-size: 0.8rem;
+  }
+  .btn-action {
+    @extend .btn;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  .btn-vote-comment {
+    @extend .btn;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  .btn-up-vote {
+    @extend .text-muted;
+  }
+  .btn-up-voted {
+    @extend .text-success;
+  }
+  .btn-down-vote {
+    @extend .text-muted;
+  }
+  .btn-down-voted {
+    @extend .text-danger;
+  }
+}
